@@ -1,14 +1,17 @@
-// But : Utiliser git et GitHub en affichant un message à l'écran
+// But : Utiliser git et GitHub en affichant un message Ã  l'Ã©cran
 // Auteur : Vincent Diaferia
 // Date : 3 septembre 2002
 
-#include <iostream> // Pour permettre au programme d'intéragir avec l'utilisateur cout,cin
+#include <iostream> // Pour permettre au programme d'intÃ©ragir avec l'utilisateur cout,cin
 
 int main()
 {
 
-	//Afficher un message à l'écran
-	std::cout << "Bienvenue à tous!";
+	//Convertir les accents tapÃ©s dans Windows pour qu'ils soient lisibles dans la console
+	setlocale(LC_ALL,"");
+	
+	//Afficher un message Ã  l'Ã©cran
+	std::cout << "Bienvenue Ã  tous!";
 
 	return 0;
 }
